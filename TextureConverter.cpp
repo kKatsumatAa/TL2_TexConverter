@@ -7,7 +7,6 @@ void TextureConverter::LoadWICTextureFromFile(const std::string& filePath)
 	std::wstring wfilePath = ConvertMultiByteStringToWideString(filePath);
 
 	//テクスチャを読み込む
-
 }
 
 std::wstring TextureConverter::ConvertMultiByteStringToWideString(const std::string& mString)

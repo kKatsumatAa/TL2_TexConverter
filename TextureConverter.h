@@ -1,10 +1,19 @@
 #pragma once
 #include<string>
 #include<Windows.h>
+// DirectXテクスチャライブラリを使用できるようにする
+#include <DirectXTex.h>
 
 //テクスチャコンバーター
 class TextureConverter
 {
+private:
+	//画像の情報
+	DirectX::TexMetadata metadata_;
+	//画像イメージのコンテナ
+	DirectX::ScratchImage scratchImage_;
+
+
 private:
 	/// <summary>
 	/// テクスチャファイル読み込み
