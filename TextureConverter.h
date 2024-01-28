@@ -12,6 +12,13 @@ private:
 	DirectX::TexMetadata metadata_;
 	//画像イメージのコンテナ
 	DirectX::ScratchImage scratchImage_;
+private:
+	//ディレクトリパス
+	std::wstring directoryPath_;
+	//ファイル名
+	std::wstring fileName_;
+	//ファイル拡張子
+	std::wstring fileExt_;
 
 
 private:
@@ -34,6 +41,12 @@ private:
 	/// </summary>
 	/// <param name="filePath">ファイルパス</param>
 	void SeparateFilePath(const std::wstring& filePath);
+
+private:
+	/// <summary>
+	/// DDSテクスチャとしてファイル書き出し
+	/// </summary>
+	void SaveDDSTextureToFile();
 
 public: 
 	/// <summary>
