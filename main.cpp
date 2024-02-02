@@ -47,7 +47,7 @@ int main(uint32_t argc, char* argv[])
 	char** options = argv + NumArgument;
 
 	//テクスチャ変換
-	converter.ConvertTextureWICToDDS(argv[kFilePath]);
+	converter.ConvertTextureWICToDDS(argv[kFilePath],numOptions,options);
 
 	//comライブラリの終了
 	CoUninitialize();
